@@ -60,6 +60,7 @@ main {
   flex-direction: column;
   gap: 1em;
   max-width: 1440px;
+  width: 100%;
 }
 
 #filter-controls {
@@ -71,9 +72,10 @@ main {
 #product-container {
   display: grid;
   /* grid-template-columns: repeat(5, 1fr); */
-  grid-template-columns: minmax(100px);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1em;
   justify-content: center;
+  padding: 0 1em;
 }
 
 #product-link {
@@ -148,9 +150,9 @@ input {
   width: 25%;
 }
 
-@media (max-width: 1296px) {
+/* @media (max-width: 1296px) {
   #product-container {
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
   }
-}
+} */
