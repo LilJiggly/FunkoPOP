@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Template</title>
+    <meta
+      name="description"
+      content="A simple HTML5 Template for new projects."
+    />
+    <meta name="author" content="SitePoint" />
+
+    <meta property="og:title" content="A Basic HTML5 Template" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.sitepoint.com/a-basic-html5-template/"
+    />
+    <meta
+      property="og:description"
+      content="A simple HTML5 Template for new projects."
+    />
+    <meta property="og:image" content="image.png" />
+
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>Funko POP</h1>
+      </header>
+      <div id="filter-controls">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search by name or character..."
+        />
+        <select id="franchise-filter">
+          <option value="all">All Franchises</option>
+        </select>
+        <select id="sort-filter">
+          <option value="">Sort by</option>
+          <option value="az">Alphabetical (A-Z)</option>
+          <option value="za">Alphabetical (Z-A)</option>
+          <option value="priceLow">Price: Low to High</option>
+          <option value="priceHigh">Price: High to Low</option>
+          <option value="numberLow">Number: Low to High</option>
+          <option value="numberHigh">Number: High to Low</option>
+        </select>
+        <button id="toggle-image-mode">Show Box</button>
+      </div>
+
+      <div id="product-container"></div>
+
+      <template id="product-template">
+        <div class="product-card">
+          <a id="product-link" href="#" target="_blank">
+            <img
+              id="product-image"
+              src=""
+              alt="Funko Pop Image"
+              class="product-img"
+            />
+          </a>
+          <div class="product-text">
+            <h2 id="product-name"></h2>
+            <!-- <p id="product-character"></p> -->
+            <div class="product-info">
+              <p id="product-franchise"></p>
+              <p id="product-value"></p>
+              <!-- <p id="product-trend"></p> -->
+              <p id="product-number"></p>
+            </div>
+          </div>
+        </div>
+      </template>
+    </main>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/toggleImages.js"></script>
+    <script src="js/filter.js"></script>
+  </body>
+</html>
