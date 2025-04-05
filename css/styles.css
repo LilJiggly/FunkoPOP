@@ -55,6 +55,10 @@ header {
   padding: 1em;
 }
 
+.banner-image {
+  background: url(images/background.jpg);
+}
+
 main {
   display: flex;
   flex-direction: column;
