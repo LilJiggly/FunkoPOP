@@ -150,6 +150,35 @@ input {
   width: 25%;
 }
 
+.chase,
+.glow {
+  padding: 0.5em;
+  width: auto;
+  display: inline-block;
+  font-size: 0.75em;
+  border-radius: 0.5em;
+}
+
+.chase {
+  background: gold;
+}
+
+.glow {
+  background: limegreen;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05em;
+}
+
+.product-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
 /* @media (max-width: 1296px) {
   #product-container {
     grid-template-columns: repeat(4, 1fr);
