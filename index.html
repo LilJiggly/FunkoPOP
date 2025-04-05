@@ -35,29 +35,30 @@
   <body>
     <main>
       <header>
-        <h1>Funko POP</h1>
-        <div class="banner-img"></div>
+        <div class="banner-image">
+          <h1>Funko POP</h1>
+        </div>
+        <div id="filter-controls">
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Search by name or character..."
+          />
+          <select id="franchise-filter">
+            <option value="all">All Franchises</option>
+          </select>
+          <select id="sort-filter">
+            <option value="">Sort by</option>
+            <option value="az">Alphabetical (A-Z)</option>
+            <option value="za">Alphabetical (Z-A)</option>
+            <option value="priceLow">Price: Low to High</option>
+            <option value="priceHigh">Price: High to Low</option>
+            <option value="numberLow">Number: Low to High</option>
+            <option value="numberHigh">Number: High to Low</option>
+          </select>
+          <button id="toggle-image-mode">Show Box</button>
+        </div>
       </header>
-      <div id="filter-controls">
-        <input
-          type="text"
-          id="search-bar"
-          placeholder="Search by name or character..."
-        />
-        <select id="franchise-filter">
-          <option value="all">All Franchises</option>
-        </select>
-        <select id="sort-filter">
-          <option value="">Sort by</option>
-          <option value="az">Alphabetical (A-Z)</option>
-          <option value="za">Alphabetical (Z-A)</option>
-          <option value="priceLow">Price: Low to High</option>
-          <option value="priceHigh">Price: High to Low</option>
-          <option value="numberLow">Number: Low to High</option>
-          <option value="numberHigh">Number: High to Low</option>
-        </select>
-        <button id="toggle-image-mode">Show Box</button>
-      </div>
 
       <div id="product-container"></div>
 
